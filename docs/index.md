@@ -1,12 +1,12 @@
 ---
 hero:
-  title: library
+  title: NOTE
   description:
   actions:
-    - text: Hello
-      link: /
-    - text: World
-      link: /
+    - text: 指南
+      link: /guide
+    - text: 组件
+      link: /components/foo
 features:
   - title: Hello
     emoji: 💎

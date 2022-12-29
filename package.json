@@ -43,6 +43,9 @@
       "prettier --parser=typescript --write"
     ]
   },
+  "dependencies": {
+    "ahooks": "^3.7.4"
+  },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",

@@ -4,6 +4,7 @@ nav:
   order: 1
 title: '受控与非受控'
 toc: content
+order: 2
 ---
 
 ## 受控与非受控

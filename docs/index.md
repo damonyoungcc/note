@@ -6,7 +6,7 @@ hero:
     - text: 指南
       link: /guide
     - text: 组件
-      link: /components/foo
+      link: /components/usememo
 features:
   - title: Hello
     emoji: 💎

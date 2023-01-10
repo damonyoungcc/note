@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 
 const App = () => {
   const [time, setTime] = useState(new Date());
-  const [number, setNumber] = useState(100);
+  const [number, setNumber] = useState('100');
 
   // 时间一秒钟更新一下time值
   useEffect(() => {

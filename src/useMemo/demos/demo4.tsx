@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
-function Foo() {
-  const [number, setNumber] = useState(100);
+function Foo({}: { arr: string[] }) {
+  const [number, setNumber] = useState('100');
   const dirtyWork = () => {
     console.log('正在进行大量运算！');
     return number;

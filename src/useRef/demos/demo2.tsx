@@ -1,9 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
 
 function Demo() {
+  console.log('111执行了');
   const [count, setCount] = useState(0);
   const countRef = useRef(count);
   countRef.current = count;
+  console.log(countRef.current);
 
   useEffect(() => {
     const timer = setTimeout(() => {

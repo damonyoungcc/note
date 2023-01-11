@@ -33,3 +33,16 @@ countRef.current = count;
 - setState 中传入函数，可以拿到当前最新值
 
 <code src="./demos/demo3.tsx"></code>
+
+### useRef 的实战场景
+
+实现一个 `useStateRef`自定义`hook`，原理就是利用`useRef`保存最新的`state`值
+
+<code src="./demos/demo4.jsx"></code>
+
+### 阅读一下 `ahooks` 的 `useGetState` 源码
+
+- `ahooks` 并没有提供想上述自定义 `hook` 可以立即获取最新 `state` 值的 `hook`
+- 原因是这样并不符合 `hook` 的规范，只是提供了 `useGetState` 解决了闭包问题
+
+<code src="./demos/demo5.jsx"></code>

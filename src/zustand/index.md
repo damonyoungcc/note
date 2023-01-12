@@ -4,7 +4,7 @@ nav:
   order: 2
 title: 'zustand源码'
 toc: content
-order: 3
+order: 4
 ---
 
 ## zustand 使用及源码学习

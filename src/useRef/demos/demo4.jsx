@@ -1,11 +1,12 @@
 import React, { useCallback, useRef, useState } from 'react';
 
+// 自定义hoook
 const useStateRef = (initialState) => {
   const [state, setState] = useState(initialState);
   const ref = useRef(state);
 
   const dispatch = useCallback((setStateAction) => {
-    // setState的可能接收一个值或者函数
+    // setState可能接收一个值或者函数,因此这里需要做判断
     ref.current =
       typeof setStateAction === 'function'
         ? setStateAction(ref.current)
@@ -18,8 +19,8 @@ const useStateRef = (initialState) => {
 };
 
 function Demo() {
+  console.log(`I'm render!`);
   const [count, setCount, getCount] = useStateRef(0);
-  console.log('render');
 
   const increase = () => {
     setCount(count + 1);
@@ -27,12 +28,14 @@ function Demo() {
     console.log('count', getCount()); // 1
   };
 
-  // 连续两次setState
+  // 连续多次setState
   const increaseTwice = () => {
     setCount(count + 1);
     console.log('count', getCount()); // 1
+    setCount(count + 2);
+    console.log('count', getCount()); // 2
     setCount((count) => count + 2);
-    console.log('count', getCount()); // 3
+    console.log('count', getCount()); // 4
   };
 
   return (

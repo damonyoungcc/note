@@ -39,14 +39,14 @@ const Top = () => {
         backgroundColor: `${
           state.clickType === 'top'
             ? '#fff'
-            : state.theme === 'light'
+            : state.theme === 'dark'
             ? '#000'
             : '#fff'
         }`,
         color: `${
           state.clickType === 'top'
             ? '#000'
-            : state.theme === 'light'
+            : state.theme === 'dark'
             ? '#fff'
             : '#000'
         }`,
@@ -70,14 +70,14 @@ const Bottom = () => {
         backgroundColor: `${
           state.clickType === 'bottom'
             ? '#fff'
-            : state.theme === 'light'
+            : state.theme === 'dark'
             ? '#000'
             : '#fff'
         }`,
         color: `${
           state.clickType === 'bottom'
             ? '#000'
-            : state.theme === 'light'
+            : state.theme === 'dark'
             ? '#fff'
             : '#000'
         }`,
@@ -97,7 +97,7 @@ const App = () => {
       <div
         style={{
           padding: '20px 50px',
-          backgroundColor: `${state.theme === 'light' ? '#000' : '#fff'}`,
+          backgroundColor: `${state.theme === 'dark' ? '#000' : '#fff'}`,
         }}
       >
         <Top />

@@ -38,7 +38,7 @@ const Top = () => {
         padding: '10px',
         backgroundColor: `${
           state.clickType === 'top'
-            ? '#fff'
+            ? '#ccc'
             : state.theme === 'dark'
             ? '#000'
             : '#fff'
@@ -69,7 +69,7 @@ const Bottom = () => {
         padding: '10px',
         backgroundColor: `${
           state.clickType === 'bottom'
-            ? '#fff'
+            ? '#ccc'
             : state.theme === 'dark'
             ? '#000'
             : '#fff'

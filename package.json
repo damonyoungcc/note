@@ -47,6 +47,7 @@
   },
   "dependencies": {
     "ahooks": "^3.7.4",
+    "react-reconciler": "^0.29.0",
     "zustand": "^4.3.1"
   },
   "devDependencies": {

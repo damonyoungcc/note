@@ -86,3 +86,7 @@ function createContainer(hook) {
 ```
 
 <code src="./demos/demo3/index.jsx"></code>
+
+### 实现一个类似`zustand`的状态管理
+
+<code src="./demos/demo4/index.jsx"></code>
